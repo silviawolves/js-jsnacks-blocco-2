@@ -7,19 +7,23 @@ let cognomi = ['Baker', 'Scott', 'Carraway', 'Buchanan', 'Sayre', 'Fitzgerald', 
 console.log(nomi)
 console.log(cognomi)
 
-//creo array dove inserire i nomi+cognomi generati casualmente
-const nomiCognomi = []
+//creo array dove unisco i due array sopra
+const nomiCognomi = [...nomi, ...cognomi]
+console.log(nomiCognomi)
 
-//creo un ciclo che scorra tutti i nomi
-for (let i = 0; i < nomi.length; i++) {
-    console.log(nomi[i])
+//creo variabile vuota da usare per operare il risultato che voglio
+let result = ''
+
+//creo array finale, vuoto, dove andranno abbinati casualmente nomi+cognomi
+const listaFake = []
+
+//creo un ciclo che scorra tutti i nomi+cognomi
+for (let i = 0; i < nomiCognomi.length; i++) {
+    console.log(nomiCognomi[i], i)
+    nomiCognomi[i] = Math.floor(Math.random() * nomiCognomi.length)
+    console.log(nomiCognomi[i])
+    
 }
-
-//creo un ciclo che scorra tutti i cognomi
-for (let i = 0; i < cognomi.length; i++) {
-    console.log(cognomi[i])
-}
-
 
 
 
