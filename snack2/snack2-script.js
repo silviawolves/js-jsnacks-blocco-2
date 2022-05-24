@@ -12,7 +12,6 @@ const listaFake = []
 
 for (let i = 0; i < 14; i++) {
     const nomeCognome = nomi[Math.floor(Math.random() * nomi.length)] + " " + cognomi[Math.floor(Math.random() * cognomi.length)]
-    console.log(nomeCognome)
     listaFake.push(nomeCognome)
 }
 
