@@ -1,13 +1,26 @@
 "use-strict"
 
+//creo array con tutti i numeri interi
 const numeriInteri = [4, 78, 543, 91, 3, 56, 23, 643, 12, 8, 48, 244, 61, 99, 174, 402]
 console.log(numeriInteri)
 
+//creo variabili base da discutere dentro i cicli o negli if
+let indicePari = false
+let somma = 0
+
+//creo array vuoto dove pushare i numeri dispari
+const numeriDispari = []
+
 for (let i = 0; i < numeriInteri.length; i++) {
-    console.log(numeriInteri[i])
-    let indicePari = i % 2 === 0
-    console.log(numeriInteri[i], indicePari)
+
+    if (i % 2 === 0) {
+        indicePari = true
+        console.log(numeriInteri[i], indicePari)
+    }
 }
+
+    console.log(somma)
+
 
 
 /*
