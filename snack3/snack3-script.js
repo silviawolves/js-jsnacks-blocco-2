@@ -8,17 +8,23 @@ console.log(numeriInteri)
 let indicePari = false
 let somma = 0
 
-//creo array vuoto dove pushare i numeri dispari
-const numeriDispari = []
+//creo array vuoto dove pushare gli indici
+const pari = []
+const dispari = []
 
 for (let i = 0; i < numeriInteri.length; i++) {
-
     if (i % 2 === 0) {
         indicePari = true
         console.log(numeriInteri[i], indicePari)
+        pari.push(numeriInteri[i])
+    } else {
+        dispari.push(numeriInteri[i])
     }
 }
+console.log(pari)
+console.log(dispari)
 
+    
     console.log(somma)
 
 
