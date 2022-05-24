@@ -12,6 +12,7 @@ let somma = 0
 const pari = []
 const dispari = []
 
+//ciclo che controlli se l'indice è pari o dispari
 for (let i = 0; i < numeriInteri.length; i++) {
     if (i % 2 === 0) {
         indicePari = true
@@ -19,14 +20,12 @@ for (let i = 0; i < numeriInteri.length; i++) {
         pari.push(numeriInteri[i])
     } else {
         dispari.push(numeriInteri[i])
+        somma += numeriInteri[i]
     }
 }
 console.log(pari)
 console.log(dispari)
-
-    
-    console.log(somma)
-
+console.log(somma)
 
 
 /*
