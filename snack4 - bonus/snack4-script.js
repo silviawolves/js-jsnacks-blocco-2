@@ -10,9 +10,12 @@ console.log(array2)
 //creo un ciclo che controlli tutti gli elementi dell'array più corto
 for (let i = 0; i < array2.length; i++) {
 
+    //se l'array2 ha meno elementi dell'array1, ad ogni ciclo aggiungo un numero random
+    //il ciclo si ferma quando gli array hanno lo stesso numero di elementi
     if (array2.length < array1.length) {
         const numeroAggiunto = Math.floor(Math.random() * 100)
         array2.push(numeroAggiunto)
+        console.log(array2)
     }
 }
 
