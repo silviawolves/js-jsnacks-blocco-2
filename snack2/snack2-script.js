@@ -10,7 +10,7 @@ console.log(cognomi)
 //creo array finale, vuoto, dove andranno abbinati casualmente nomi+cognomi
 const listaFake = []
 
-for (let i = 0; i < 14; i++) {
+for (let i = 0; i <= 6; i++) {
     const nomeCognome = nomi[Math.floor(Math.random() * nomi.length)] + " " + cognomi[Math.floor(Math.random() * cognomi.length)]
     listaFake.push(nomeCognome)
 }
