@@ -15,10 +15,13 @@ for (let i = 0; i < array2.length; i++) {
     if (array2.length < array1.length) {
         const numeroAggiunto = Math.floor(Math.random() * 100)
         array2.push(numeroAggiunto)
-        console.log(array2)
+    } else if (array2.length > array1.length) {
+        const numeroAggiunto = Math.floor(Math.random() * 100)
+        array1.push(numeroAggiunto)
     }
 }
 
+console.log(array1)
 console.log(array2)
 
 /*
